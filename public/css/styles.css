@@ -46,9 +46,15 @@ header {
 
 /* Elemento main */
 main {
-    
+
     width: inherit;
     min-height: 85vh;
+    padding: 15px;
+
+    /*Colocara un único elemento en el centro del elemento que lo contiene*/
+    display: flex;
+    justify-content: center;
+    
 
     
     

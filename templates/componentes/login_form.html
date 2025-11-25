@@ -1,0 +1,82 @@
+<style>
+  form {
+    position: relative;
+    max-height: 30vh !important;
+    outline: solid black 1px;
+    padding: 15px;
+    margin: 30px auto; 
+  }
+
+  .form_group > h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 200;
+  }
+
+  .form_group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; 
+    gap: 10%; 
+
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 200;
+  }
+
+ 
+  .form_group label {
+    width: 20%;
+    text-align: left;
+  }
+
+
+  .form_group input {
+    width: 70%;
+    padding: 5px;
+    text-align: center;
+
+  }
+
+
+  .form_group > button {
+    background-color: var(--bs-primary);
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: var(--bs-light);
+    cursor: pointer;
+    border: none;
+    margin-left: auto; 
+  }
+
+  .form_group > button:hover {
+    background-color: var(--bs-secondary);
+    transition: 0.3s;
+  }
+</style>
+
+<form action="#" method="GET">
+  <div class="form_group">
+    <h2>Formulario de inicio de sesión</h2>
+    
+  </div>
+
+  <div class="form_group">
+    <label for="username">Usuario</label>
+    <input type="text" name="username" id="username" placeholder="Usuario" required/>
+  </div>
+
+  <div class="form_group">
+    <label for="password">Contraseña</label>
+    <input type="password" name="password" id="password" placeholder="Contraseña" required/>
+  </div>
+
+  <div class="form_group">
+
+     <label for="remember">Recuérdame</label>
+        <input type="checkbox" name="remember" id="remember" />
+    <button type="submit">Enviar</button>
+  </div>
+</form>
