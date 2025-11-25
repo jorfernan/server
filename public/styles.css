@@ -6,7 +6,7 @@
 
 /* Elementos html y body*/
 html, body {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     position: relative;
 }
