@@ -1,6 +1,10 @@
 
 # Plantilla de servidor web minimalista con flask
+## Obtener el código
+git clone https://github.com/jorfernan/server.git
 
+## Acceder a la carpeta
+cd server
 
 ## Entorno virtual
 python -m venv venv
