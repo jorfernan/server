@@ -3,15 +3,32 @@
 {% block title %}Inicio{% endblock %}
 
 {% block body %}
-<header>
-    <!-- contenido del header -->
-</header>
 
+{% include "componentes/header.html" %}
+
+
+<!-- ESCRIBIREMOS CÓDIGO AQUI -->
 <main>
+
+
     <!-- contenido del main -->
+    <!-- 
+     <h1>Lista de usuarios</h1>
+
+    <ul>
+        {% for user in users %}
+            <li>
+                ID: {{ user.id }} |
+                Nombre: {{ user.name }} |
+                Password: {{ user.password }}
+            </li>
+        {% endfor %}
+    </ul>
+    -->
+
+
 </main>
 
-<footer>
-    <!-- contenido del footer -->
-</footer>
+{% include "componentes/footer.html" %}
+
 {% endblock %}

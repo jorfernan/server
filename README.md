@@ -15,6 +15,9 @@ Depende del SO. Accede a la carpeta venv y localiza el script de activación del
 ## Instalación de dependencias
 pip install -r requirements.txt
 
+## Inicialización de la base de datos
+python init.py
+
 ## Inicializa el servidor
 python app.py
 
