@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{ config.site_language }}">
 <head>
+
+    <!-- METAS -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/logo.png') }}">
+
+    <!-- TÍTULO DE LA PÁGINA -->
     <title>{% block title %}{{ config.site_title }}{% endblock %}</title>
 
     <!-- CSS global -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <!-- Fuentes importadas mediante CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+
 
     {% block head_extra %}{% endblock %}
 
@@ -17,7 +29,7 @@
     {% block body %}{% endblock %}
 
     <!-- JS global -->
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
     {% block scripts %}{% endblock %}
 </body>
