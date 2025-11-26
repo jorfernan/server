@@ -55,15 +55,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
 
+    <!-- JS global -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
 
 </head>
 <body>
 
     {% block body %}{% endblock %}
 
-    <!-- JS global -->
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-
-    {% block scripts %}{% endblock %}
+    
 </body>
 </html>
