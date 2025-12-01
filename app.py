@@ -18,9 +18,23 @@ if not os.path.exists(CONFIG_PATH):
     sys.exit(1)
 
 
+DEFAULT_CONFIG = {
+    "site_title": "Mi Aplicación",
+    "site_language": "es",
+    "site_last_year_update": "2024",
+    "site_auhor": "Alumno alumno alumno",
+    "site_description": "Playground para los alumnos de lenguaje de marcas",
+    "site_keywords": "lenguaje de marcas, html, css, xml, json, javascript, etiquetas, atributos, sintaxis, estructura, documento, web, maquetación, diseño web, hojas de estilo, validación, semántica, front end, desarrollo web, prácticas, ejercicios, codificación, estándares web, w3c"
+}
+
 def load_config():
-    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        if os.path.exists(CONFIG_PATH):
+            with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+                return json.load(f)
+    except Exception as e:
+        print(f"[WARN] Error al cargar config.json: {e}")
+    return DEFAULT_CONFIG
 
 def get_users():
     conn = sqlite3.connect(DB_PATH)
