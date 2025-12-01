@@ -1,0 +1,24 @@
+/* Elemento header */
+header {
+  width: inherit;
+  min-height: 15vh;
+
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+}
+
+header > h1 {
+  width: 80%;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 150;
+}
+
+header img {
+  filter: brightness(0) invert(1);
+}

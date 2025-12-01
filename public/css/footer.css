@@ -1,0 +1,12 @@
+/* Elemento footer */
+footer {
+  width: inherit;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 150;
+}

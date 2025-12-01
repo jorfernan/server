@@ -41,5 +41,13 @@ def index():
 
     return render_template("index.html", users = users, config=config)
 
+
+@app.route("/about")
+def about():
+
+    config = load_config()
+    
+    return  render_template("about.html", config=config)
+
 if __name__ == "__main__":
     app.run(debug=True)
