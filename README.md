@@ -8,6 +8,7 @@
 ## Acceder a la carpeta
 - **[IMPORTANTE]** Una vez descargada la carpeta, accedemosa la misma y ejecutamos Visual Studio Code en ella para tenerla como directorio raiz. 
 - Linux
+
             cd server && code .
 
 - Windows
