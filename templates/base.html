@@ -49,20 +49,8 @@
     <!-- CSS global -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 
-    <!-- CSS HEADER-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
-
-    <!-- CSS MAIN -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-
-    <!-- CSS FOOTER -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
-
-    <!-- CSS LOGIN -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/login_form.css') }}">
-
-    <!-- CSS SINGIN -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/sigIn_form.css') }}">
+    <!-- CSS EXTRAS PAGINAS ADICIONALES -->
+    {% block head_extra %}{% endblock %}
 
     <!-- Fuentes importadas mediante CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

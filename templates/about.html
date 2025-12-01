@@ -1,4 +1,22 @@
 {% extends "base.html" %}
+
+
+{% block head_extra %}
+    <!-- CSS DE LA PÁGINA -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <!-- CSS COMPONENTES -->
+    <!-- CSS HEADER-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <!-- CSS MAIN -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!-- CSS FOOTER -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <!-- CSS LOGIN -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login_form.css') }}">
+    <!-- CSS SINGIN -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sigIn_form.css') }}">
+{% endblock %}
+
 {% block body %}
 {% include "componentes/header.html" %}
 
@@ -6,6 +24,8 @@
 <!-- {\%\ include "componentes/archivo.html" \%\}  -->  
 <main>
     
+    
+
 </main>
 
 {% include "componentes/footer.html" %}

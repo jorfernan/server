@@ -1,8 +1,24 @@
 {% extends "base.html" %}
+
+{% block head_extra %}
+    <!-- CSS COMPONENTES -->
+    <!-- CSS HEADER-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <!-- CSS MAIN -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!-- CSS FOOTER -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <!-- CSS LOGIN -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login_form.css') }}">
+    <!-- CSS SINGIN -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sigIn_form.css') }}">
+{% endblock %}
+
+
 {% block body %}
 {% include "componentes/header.html" %}
 
-<!-- IMPORTAR ELEMENTOS SEGUN EL SIGUIENTE ESQUEMA (Los porcentajes sin la "\")  -->
+<!-- IMPORTAR ELEMENTOS SEGÚN EL SIGUIENTE ESQUEMA (Los porcentajes sin la "\")  -->
 <!-- {\%\ include "componentes/archivo.html" \%\}  -->  
 <main>
     {% include "componentes/login_form.html" %}
