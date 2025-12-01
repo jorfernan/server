@@ -1,0 +1,52 @@
+form {
+  position: relative;
+  max-height: 30vh !important;
+  outline: solid black 1px;
+  padding: 15px;
+  margin: 30px auto;
+}
+
+.form_group > h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 200;
+}
+
+.form_group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10%;
+
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 200;
+}
+
+.form_group label {
+  width: 20%;
+  text-align: left;
+}
+
+.form_group input {
+  width: 70%;
+  padding: 5px;
+  text-align: center;
+}
+
+.form_group > button {
+  background-color: var(--bs-primary);
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: var(--bs-light);
+  cursor: pointer;
+  border: none;
+  margin-left: auto;
+}
+
+.form_group > button:hover {
+  background-color: var(--bs-secondary);
+  transition: 0.3s;
+}

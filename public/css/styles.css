@@ -1,7 +1,9 @@
-*,*::before, *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* Definición de variables */
@@ -29,43 +31,57 @@
 }
 
 /* Elementos html y body*/
-html, body {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
 }
 
 /* Elemento header */
 header {
-    width: inherit;
-    min-height: 15vh;
+  width: inherit;
+  min-height: 15vh;
 
-    
-    
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+}
+
+header > h1 {
+  width: 80%;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 150;
+}
+
+header img {
+  filter: brightness(0) invert(1);
 }
 
 /* Elemento main */
 main {
+  width: inherit;
+  min-height: 85vh;
+  padding: 15px;
 
-    width: inherit;
-    min-height: 85vh;
-    padding: 15px;
-
-    /*Colocara un único elemento en el centro del elemento que lo contiene*/
-    display: flex;
-    justify-content: center;
-    
-
-    
-    
-
+  /*Colocara un único elemento en el centro del elemento que lo contiene*/
+  display: flex;
+  justify-content: center;
 }
 /* Elemento footer */
 footer {
-
-    width: inherit;
-    min-height: 10vh;
-
-    
-
+  width: inherit;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bs-dark);
+  color: var(--bs-light);
+  font-family: "Science Gothic", sans-serif;
+  font-weight: 150;
 }

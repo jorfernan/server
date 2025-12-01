@@ -1,41 +1,12 @@
 {% extends "base.html" %}
-
-<!-- 
-{% block title %}{{config.site_title}}{% endblock %}
--->
-
 {% block body %}
-
 {% include "componentes/header.html" %}
 
-
-<!-- ESCRIBIREMOS CÓDIGO AQUI -->
+<!-- IMPORTAR ELEMENTOS SEGUN EL SIGUIENTE ESQUEMA (Los porcentajes sin la "\")  -->
+<!-- {\%\ include "componentes/archivo.html" \%\}  -->  
 <main>
-
-
-
-    <!-- {% include "componentes/login_form.html" %} --> 
-
-    {% include "componentes/signIn_form.html" %}
-
-    <!-- contenido del main -->
-    <!-- 
-     <h1>Lista de usuarios</h1>
-
-    <ul>
-        {% for user in users %}
-            <li>
-                ID: {{ user.id }} |
-                Nombre: {{ user.name }} |
-                Password: {{ user.password }}
-            </li>
-        {% endfor %}
-    </ul>
-    -->
-
-
+    {% include "componentes/login_form.html" %}
 </main>
 
 {% include "componentes/footer.html" %}
-
 {% endblock %}
