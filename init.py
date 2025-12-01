@@ -35,7 +35,7 @@ def init_database():
 
     conn.commit()
     conn.close()
-    print(f"Base de datos inicializada y usuarios insertados en: {db_path}")
+    print(f"\n\033[1m\033[34m[INFO] Base de datos inicializada y usuarios insertados en: {db_path}\033[0m\n")
 
 
 if __name__ == "__main__":

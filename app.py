@@ -10,11 +10,11 @@ DB_PATH = os.path.join("database", "database.db")
 CONFIG_PATH = os.path.join("config", "settings.json")
 
 if not os.path.exists(DB_PATH):
-    print("\033[91m\033[1m[ERROR] Base de datos no inicializada, por favor, ejecute el archivo init.py antes de iniciar el servidor\033[0m")
+    print("\033[91m\033[1m\n[ERROR] Base de datos no inicializada, por favor, ejecute el archivo init.py antes de iniciar el servidor\n\033[0m")
     sys.exit(1)
 
 if not os.path.exists(CONFIG_PATH):
-    print("\033[91m\033[1m[ERROR] Archivo de configuración no encontrado en ("+ CONFIG_PATH +"), descargue la carpeta del repositorio original nuevamente antes de iniciar el servidor\033[0m")
+    print("\033[91m\033[1m\n[ERROR] Archivo de configuración no encontrado en ("+ CONFIG_PATH +"), descargue la carpeta del repositorio original nuevamente antes de iniciar el servidor\n\033[0m")
     sys.exit(1)
 
 
