@@ -1,7 +1,9 @@
 <!-- ESCRIBIR EL CONTENIDO DEL HEADER -->
 <header>
-    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" width="100" height="100">
-    <h1>{{ config.site_title }}</h1>
+    <div class="header-group">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" width="100" height="100">
+        <h1>{{ config.site_title }}</h1>
+    </div>
     <!-- Navegador del header -->
     <nav>
         <ul>

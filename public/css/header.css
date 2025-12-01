@@ -1,24 +1,61 @@
 /* Elemento header */
 header {
-  width: inherit;
-  min-height: 15vh;
-
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  gap: 15px;
-  background-color: var(--bs-dark);
-  color: var(--bs-light);
+    display: flex;
+    flex-direction: column;   /* fuerza que todo vaya en líneas verticales */
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    width: 100%;
 }
 
-header > h1 {
-  width: 80%;
-  font-size: 4rem;
-  text-align: center;
-  font-family: "Science Gothic", sans-serif;
-  font-weight: 150;
+/* fila con imagen + h1 */
+.header-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centra imagen+h1 */
+    gap: 20px;
 }
 
-header img {
-  filter: brightness(0) invert(1);
+.header-group h1 {
+    text-align: center;
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 150;
+}
+
+.header-group img {
+    filter: invert(1);
+}
+
+/* NAV ocupa toda la línea */
+header > nav {
+    background-color: var( --bs-gray-800);
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* UL centrado y con ancho del 60% */
+header > nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;  /* centra los links */
+    gap: 30px;
+    padding: 0;
+    margin: 0 auto;
+    width: 60%;               /* el ul mide 60% del nav */
+    text-align: center;
+}
+
+header > nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Science Gothic", sans-serif;
+    font-size: 1rem;
+}
+
+header > nav ul li a:hover {
+    color: var(--bs-gray-500);
 }

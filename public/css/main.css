@@ -1,10 +1,12 @@
 /* Elemento main */
 main {
-  
   width: inherit;
   min-height: 85vh;
+  max-width: 80%;
   padding: 15px;
-
+  outline: solid black 1px;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+
 }
