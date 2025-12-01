@@ -33,6 +33,7 @@
 /* Elementos html y body*/
 html,
 body {
+  background-color: var(--bs-gray-500);
   width: 100%;
   min-height: 100vh;
   position: relative;
