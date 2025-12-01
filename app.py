@@ -31,23 +31,18 @@ def get_users():
     conn.close()
     return rows
 
-
+@app.context_processor
+def inject_config():
+    return {"config": load_config()}
 
 @app.route("/")
 def index():
-    
     users = get_users()
-    config = load_config()
-
-    return render_template("index.html", users = users, config=config)
-
+    return render_template("index.html", users = users)
 
 @app.route("/about")
 def about():
-
-    config = load_config()
-    
-    return  render_template("about.html", config=config)
+    return  render_template("about.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
