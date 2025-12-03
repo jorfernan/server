@@ -54,9 +54,9 @@ def index():
     users = get_users()
     return render_template("index.html", users = users)
 
-@app.route("/about")
-def about():
-    return  render_template("about.html")
+@app.route("/tasks")
+def tasks():
+    return  render_template("tasks.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
