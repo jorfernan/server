@@ -29,12 +29,15 @@ header {
     filter: invert(1);
 }
 
+
+
 /* NAV ocupa toda la línea */
 header > nav {
     background-color: var( --bs-gray-800);
     border-radius: 5px;
     width: 100%;
     padding: 1rem;
+
 }
 
 /* UL centrado y con ancho del 60% */
@@ -80,7 +83,7 @@ header > nav ul li {
     /* Estilos visuales de la caja */
     background-color: var(--bs-gray-900); 
     border-radius: 5px;
-    padding: 0;
+    padding: 5px;
     
     /* ¡CAMBIO CRÍTICO! Quitamos o ponemos a 0 cualquier espacio vertical. */
     margin-top: 0; 
@@ -112,6 +115,7 @@ header > nav ul li {
 .dropdown a:hover {
     background-color: var(--bs-dark); /* Fondo al pasar el ratón */
     color: var(--bs-gray-300);
+    border-radius: 5px;
 }
 
 
@@ -128,10 +132,14 @@ header > nav ul li {
     left: 100%; /* Coloca el sub-desplegable a la derecha del borde del elemento padre */
     top: 0; 
     transform: translateX(0); 
-    margin-left: 0; 
+    margin-left: 0;
+    background-color: var(--bs-gray-800);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* Muestra el sub-desplegable al hacer hover */
 .has-dropdown-sub:hover > .sub-dropdown {
     display: block;
+    
 }
