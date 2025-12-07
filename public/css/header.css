@@ -59,3 +59,79 @@ header > nav ul li a {
 header > nav ul li a:hover {
     color: var(--bs-gray-500);
 }
+
+
+/* --- MODIFICACIONES CRUCIALES PARA EL DROPDOWN --- */
+
+/* La lista padre debe ser relativa para que el absoluto del dropdown funcione bien */
+header > nav ul li {
+    position: relative; /* ¡CLAVE! Permite posicionar el .dropdown en relación al LI padre */
+}
+
+/* Oculta los submenús por defecto */
+.dropdown {
+    display: none;
+    position: absolute; 
+    top: 100%; /* Posiciona el desplegable justo debajo del elemento principal */
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1000;
+    
+    /* Estilos visuales de la caja */
+    background-color: var(--bs-gray-900); 
+    border-radius: 5px;
+    padding: 0;
+    
+    /* ¡CAMBIO CRÍTICO! Quitamos o ponemos a 0 cualquier espacio vertical. */
+    margin-top: 0; 
+    
+    min-width: 250px; 
+    border-radius: 5px;
+}
+
+/* Muestra el submenú cuando pasas el ratón sobre el elemento padre */
+.has-dropdown:hover > .dropdown {
+    display: block;
+}
+
+/* Estilos de los elementos LI dentro del desplegable para apilamiento vertical */
+.dropdown > li {
+    display: block; /* Vuelve a ser un bloque vertical */
+    text-align: left; /* Alineamos el texto a la izquierda */
+    padding: 0; /* Quitamos el padding del li principal */
+    gap: 0;
+}
+
+/* Estilos de los enlaces dentro del desplegable */
+.dropdown a {
+    text-decoration: none;
+    color: var(--bs-light);
+    padding: 10px 15px;
+    display: block; /* Asegura que el área de clic sea grande */
+}
+.dropdown a:hover {
+    background-color: var(--bs-dark); /* Fondo al pasar el ratón */
+    color: var(--bs-gray-300);
+}
+
+
+/* --- SEGUNDO NIVEL DE DESPLIEGUE (Subapartados) --- */
+
+/* El LI padre del sub-desplegable también necesita ser relativo */
+.has-dropdown-sub {
+    position: relative; 
+}
+
+/* Sub-desplegables (los apartados 5, 6 y 8) */
+/* Sub-desplegables (los apartados 5, 6 y 8) */
+.sub-dropdown {
+    left: 100%; /* Coloca el sub-desplegable a la derecha del borde del elemento padre */
+    top: 0; 
+    transform: translateX(0); 
+    margin-left: 0; 
+}
+
+/* Muestra el sub-desplegable al hacer hover */
+.has-dropdown-sub:hover > .sub-dropdown {
+    display: block;
+}

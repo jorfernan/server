@@ -54,9 +54,9 @@ def index():
     users = get_users()
     return render_template("index.html", users = users)
 
-@app.route("/tasks")
+@app.route("/practica_html")
 def tasks():
-    return  render_template("tasks.html")
+    return  render_template("practica_html.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
