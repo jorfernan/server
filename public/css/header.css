@@ -30,6 +30,7 @@ header.scrolled .header-group {
 header.scrolled > nav {
     /* Puedes ajustar el padding del nav para que el fondo gris llene el ancho del header estrecho */
     padding: 1rem ;
+    top: 0;
     
     /* El ul se centra dentro del nav. Si el nav.scrolled tiene menos padding, el ul se mantiene */
 }
