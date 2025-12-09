@@ -1,5 +1,8 @@
 /* Elemento header */
 header {
+    position: sticky; 
+    top: 0;          
+    z-index: 1000;
     display: flex;
     flex-direction: column;   /* fuerza que todo vaya en líneas verticales */
     align-items: center;
@@ -8,6 +11,27 @@ header {
     background-color: var(--bs-dark);
     color: var(--bs-light);
     width: 100%;
+    /*transition: all 0.3s ease-in-out;*/
+}
+
+/* 2. Estado Compacto/Scrolled */
+header.scrolled {
+    /* Reduce el padding para hacerlo más estrecho */
+    padding: 10px 15px; /* Ejemplo: 10px arriba/abajo, 15px lados */
+}
+
+/* 3. Ocultar el Grupo (Imagen + Título) en el Estado Compacto */
+header.scrolled .header-group {
+    /* Oculta la imagen y el título */
+    display: none; 
+}
+
+/* 4. Estilos para que la navegación se vea mejor cuando solo está ella */
+header.scrolled > nav {
+    /* Puedes ajustar el padding del nav para que el fondo gris llene el ancho del header estrecho */
+    padding: 1rem ;
+    
+    /* El ul se centra dentro del nav. Si el nav.scrolled tiene menos padding, el ul se mantiene */
 }
 
 /* fila con imagen + h1 */
